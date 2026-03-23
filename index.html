@@ -57,9 +57,29 @@ section {
     border-radius: 10px;
 }
 
+iframe {
+    border: none;
+    max-width: 100%;
+}
+
 footer {
     padding: 20px;
     background: #111;
+}
+
+/* Optional styling for new sections */
+#fb-events, #instagram-feed, #event-signup {
+    margin-top: 50px;
+}
+
+#event-signup input {
+    padding: 10px;
+    width: 250px;
+    margin: 5px;
+}
+
+#event-signup button {
+    margin-top: 10px;
 }
 </style>
 
@@ -84,8 +104,6 @@ footer {
 <section id="music" class="music">
     <h2>Music</h2>
     <p>Coming soon to Spotify & Apple Music</p>
-
-   
 </section>
 
 <section class="gallery">
@@ -93,6 +111,40 @@ footer {
     <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2">
     <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae">
     <img src="https://images.unsplash.com/photo-1518600506278-4e8ef466b810">
+</section>
+
+<!-- Facebook Feed & Events -->
+<section id="fb-events">
+    <h2>Facebook Feed & Events</h2>
+    <iframe 
+        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/jakecolemusic&tabs=timeline,events&width=500&height=600"
+        width="500"
+        height="600"
+        style="border:none;overflow:hidden;max-width:100%;"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true">
+    </iframe>
+</section>
+
+<!-- Instagram Feed via Elfsight -->
+<section id="instagram-feed">
+    <h2>Instagram</h2>
+    <!-- Elfsight Instagram Feed -->
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-YOURCODE"></div>
+</section>
+
+<!-- Event Signup Form for SMS Reminders -->
+<section id="event-signup">
+    <h2>Get Event Alerts</h2>
+    <form action="https://formspree.io/f/YOURFORMID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <br>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <br>
+        <button type="submit" class="btn">Sign Up for Event Texts</button>
+    </form>
 </section>
 
 <section>
