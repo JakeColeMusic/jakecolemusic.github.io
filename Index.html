@@ -1,106 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Brand Name</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jake Cole Music</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #111;
-      color: #fff;
-      text-align: center;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
 
-    header {
-      padding: 60px 20px;
-      background: #000;
-    }
+header {
+    background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d') center/cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    h1 {
-      margin: 0;
-      font-size: 32px;
-    }
+header h1 {
+    font-size: 60px;
+    margin: 0;
+}
 
-    p {
-      color: #ccc;
-    }
+header p {
+    font-size: 20px;
+}
 
-    .section {
-      padding: 50px 20px;
-    }
+.btn {
+    background: #1db954;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-    .socials a {
-      margin: 10px;
-      display: inline-block;
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      border: 1px solid #444;
-      padding: 10px 15px;
-      border-radius: 6px;
-    }
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
 
-    .socials a:hover {
-      background: #fff;
-      color: #000;
-    }
+.music iframe {
+    width: 300px;
+    height: 80px;
+    margin: 10px;
+}
 
-    iframe {
-      border: none;
-      width: 100%;
-      max-width: 500px;
-      height: 600px;
-    }
+.gallery img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
 
-    footer {
-      padding: 20px;
-      background: #000;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+footer {
+    padding: 20px;
+    background: #111;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-  <h1>Your Brand</h1>
-  <p>Welcome to our official site</p>
+    <h1>Jake Cole</h1>
+    <p>Country Music • Texas Raised</p>
+    <a class="btn" href="#music">Listen Now</a>
 </header>
 
-<div class="section">
-  <h2>Follow Us</h2>
-  <div class="socials">
-    <a href="https://facebook.com/YOURPAGE" target="_blank">Facebook</a>
-    <a href="https://instagram.com/YOURPAGE" target="_blank">Instagram</a>
-    <a href="https://tiktok.com/@YOURPAGE" target="_blank">TikTok</a>
-    <a href="https://youtube.com/YOURCHANNEL" target="_blank">YouTube</a>
-  </div>
-</div>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Writing songs about real life, backroads, and good times. 
+        New music dropping soon—stay tuned.
+    </p>
+</section>
 
-<div class="section">
-  <h2>Facebook Feed & Events</h2>
-  <iframe 
-    src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/YOURPAGE&tabs=timeline,events&width=500&height=600"
-    width="500"
-    height="600"
-    style="border:none;overflow:hidden"
-    scrolling="no"
-    frameborder="0"
-    allowfullscreen="true">
-  </iframe>
-</div>
+<section id="music" class="music">
+    <h2>Music</h2>
+    <p>Coming soon to Spotify & Apple Music</p>
 
-<div class="section">
-  <h2>Contact</h2>
-  <p>Email us: <a href="mailto:info@yourdomain.com">info@yourdomain.com</a></p>
-</div>
+    <!-- Replace later with your real Spotify embed -->
+    <iframe src="https://open.spotify.com/embed/track/7lPN2DXiMsVn7XUKtOW1CS"></iframe>
+</section>
+
+<section class="gallery">
+    <h2>Photos</h2>
+    <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2">
+    <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae">
+    <img src="https://images.unsplash.com/photo-1518600506278-4e8ef466b810">
+</section>
+
+<section>
+    <h2>Follow Me</h2>
+    <a class="btn" href="https://facebook.com/jakecolemusic">Facebook</a>
+    <a class="btn" href="https://instagram.com/jake_cole04">Instagram</a>
+</section>
 
 <footer>
-  <p>© 2026 Your Brand</p>
+    <p>© 2026 Jake Cole Music</p>
 </footer>
 
 </body>
