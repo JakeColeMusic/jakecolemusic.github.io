@@ -1,150 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0d0d0d;
-    color: White;
-}
-
-header {
-    background: url('https://i.imgur.com/sbdDw5N.jpeg') center/cover;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: Right;
-    align-items: center;
-}
-
-header h1 {
-    font-size: 60px;
-    margin: 0;
-}
-
-header p {
-    font-size: 20px;
-}
-
-.btn {
-    background: #1db954;
-    color: white;
-    padding: 12px 20px;
-    margin-top: 15px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-}
-
-.music iframe {
-    width: 300px;
-    height: 80px;
-    margin: 10px;
-}
-
-.gallery img {
-    width: 250px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-iframe {
-    border: none;
-    max-width: 100%;
-}
-
-footer {
-    padding: 20px;
-    background: #111;
-}
-
-/* Optional styling for new sections */
-#fb-events, #instagram-feed, #event-signup {
-    margin-top: 50px;
-}
-
-#event-signup input {
-    padding: 10px;
-    width: 250px;
-    margin: 5px;
-}
-
-<!-- Elfsight Event Calendar | Untitled Event Calendar -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-fcd12b43-f525-4a8b-8027-4c9959a2072f" data-elfsight-app-lazy></div>
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Cole | Official Artist Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1></h1>
-    <p></p>
-    <a class="btn" href="#music">Listen Now</a>
-</header>
+    <nav>
+        <div class="logo">JAKE COLE</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#calendar">Tour</a></li>
+            <li><a href="#photos">Gallery</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#booking" class="nav-cta">Book Now</a></li>
+        </ul>
+    </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-Jake Cole is a singer, songwriter, and storyteller from Indiana that now resides Houston, Texas, bringing honest, heart-driven music to every stage. With a passion for crafting songs that capture life’s moments—big and small—Jake blends soulful lyrics, driving melodies, and a love for live performance into a sound that’s uniquely his own.
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>JAKE COLE</h1>
+            <p class="subtitle">Real Country. Real Stories.</p>
+            <a href="#music" class="btn">Listen to the Latest</a>
+        </div>
+    </header>
 
-From backroads anthems to intimate acoustic moments, his music invites listeners to feel, remember, and celebrate the moments that make life worth singing about. Jake’s energetic performances and heartfelt songs have earned him a growing following across social media and streaming platforms, and he’s just getting started.
+    <main>
+        <section id="bio">
+            <div class="section-container">
+                <h2>The Story</h2>
+                <div class="bio-grid">
+                    <p>Enter your bio here. Talk about your roots, your sound, and your journey through country music. Keep it authentic—people want to know the person behind the songs.</p>
+                </div>
+            </div>
+        </section>
 
-Whether he’s writing from his heart in the studio or connecting with fans on stage, Jake Cole is all about music that feels real, personal, and unforgettable.
-    </p>
-</section>
+        <section id="calendar" class="dark-bg">
+            <div class="section-container">
+                <h2>On The Road</h2>
+                <div class="tour-dates">
+                    <p>New tour dates coming soon. Check back often!</p>
+                </div>
+            </div>
+        </section>
 
-<section id="music" class="music">
-    <h2>Music</h2>
-    <p>Coming soon to Spotify & Apple Music</p>
-</section>
+        <section id="photos">
+            <div class="section-container">
+                <h2>Gallery</h2>
+                <div class="gallery-info">
+                    <p>From the stage to the studio.</p>
+                    <div id="google-photos-container">
+                        </div>
+                </div>
+            </div>
+        </section>
 
-<section class="gallery">
-    <h2>Photos</h2>
-    <img src="https://i.imgur.com/G3RLNnT.jpeg"
-    <img src="https://i.imgur.com/jyjEyFz.png">
+        <section id="music" class="dark-bg">
+            <div class="section-container">
+                <h2>New Music</h2>
+                <div class="music-player">
+                    <p>Listen on your favorite platform.</p>
+                    <div class="streaming-links">
+                        <a href="#">Spotify</a> | <a href="#">Apple Music</a> | <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</section>
+        <section id="booking">
+            <div class="section-container">
+                <h2>Booking & Inquiries</h2>
+                <p>For festivals, private events, and club dates, please get in touch.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Event Location & Date">
+                    <textarea placeholder="Tell us about the event..." rows="5"></textarea>
+                    <button type="submit" class="btn-solid">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-<!-- Facebook Feed & Events -->
-<section id="fb-events">
-    <h2>Facebook Feed & Events</h2>
-    <iframe 
-        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/jakecolemusic&tabs=timeline,events&width=500&height=600"
-        width="500"
-        height="600"
-        style="border:none;overflow:hidden;max-width:100%;"
-        scrolling="no"
-        frameborder="0"
-        allowfullscreen="true">
-        justify-content: center;
-    </iframe>
-</section>
-
-</section>
-
-
-</section>
-
-<section>
-    <h2>Follow Me</h2>
-    <a class="btn" href="https://facebook.com/jakecolemusic">Facebook</a>
-    <a class="btn" href="https://instagram.com/jake_cole04">Instagram</a>
-</section>
-
-<footer>
-    <p>© 2025 Jake Cole Music</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Jake Cole Music. Built with pride.</p>
+    </footer>
 
 </body>
 </html>
